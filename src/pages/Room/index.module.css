@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper {
+    background-color: white;
+    box-shadow: .5rem .5rem 1.25rem #888888;
+    height: 60rem;
+    width: 116rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.videos-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8888880f;
+    box-shadow: inset 0.5rem 0.5rem 0.3rem #88888820;
+    border-radius: 1rem;
+}
+
+.main-video-track-discribe {
+    color: #7C7979;
+    font-size: 1.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+.videos-protal {
+    height: 45rem;
+    width: 80rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-animation {
+    position: absolute;
+    height: 3rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    animation: loading-rotate 1.5s infinite linear;
+}
+
+@keyframes loading-rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.videos-toggle {
+    position: absolute;
+    right: -16.2rem;
+    height: 45rem;
+    width: 14.2rem;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0 1rem;
+    z-index: 999;
+    border-radius: 1rem;
+}
+
+:global(.videos-toggle-close) {
+    animation: videos-toggle-close-animation .5s forwards;
+}
+
+@keyframes videos-toggle-close-animation {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -16.2rem;
+    }
+}
+
+:global(.videos-toggle-open) {
+    animation: videos-toggle-open-animation .5s forwards;
+}
+
+@keyframes videos-toggle-open-animation {
+    0% {
+        right: -16.2rem;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.toggle-btn {
+    position: absolute;
+    height: 2rem;
+    padding: .5rem;
+    left: -3rem;
+    top: 1rem;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: .7rem 0 0 .7rem;
+}
+
+.video-full-size {
+    height: 45rem;
+    border-radius: 1rem;
+    position: absolute;
+    display: none;
+}
+
+:global(.toggle-video-track-wrapper) {
+    margin-top: 1rem;
+    background-color: #ffffffbf;
+    border-radius: 1rem;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+:global(.toggle-video-track) {
+    height: 8rem;
+    border-radius: 1rem;
+}

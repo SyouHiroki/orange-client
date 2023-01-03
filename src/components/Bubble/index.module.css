@@ -1,0 +1,34 @@
+.flex-right {
+    display: flex;
+    justify-content: right;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: left;
+}
+
+.flex-right:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.flex-left:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.bubble {
+    background-color: white;
+    margin-top: 1.5rem;
+    border-radius: .7rem;
+    padding: 1rem;
+    color: #7C7979;
+    max-width: 16rem;
+}
+
+.identity {
+    font-weight: bold;
+}
+
+.text {
+    word-wrap: break-word;
+}
