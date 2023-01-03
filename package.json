@@ -19,7 +19,7 @@
     "uuid": "^9.0.0"
   },
   "scripts": {
-    "start_t": "set NODE_OPTIONS=\"--openssl-legacy-provider\" & npm run start\n",
+    "start_olp": "set NODE_OPTIONS=\"--openssl-legacy-provider\" & npm run start\n",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
