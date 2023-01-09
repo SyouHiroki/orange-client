@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom'
-import About from './pages/About'
 import Lobby from './pages/Lobby'
 import Room from './pages/Room'
 import { connectWithSocketIOServer } from './utils/wss'
